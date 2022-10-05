@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="triangle.css">
+    <style>
+        #quiz-form {
+            max-width: 450px;
+            margin: auto;
+            text-align: left;
+        }
+
+        #quiz-form p {
+            font-weight: 600;
+        }
+
+        #quiz-form input {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h2 id="heading">Fun with Triangles📐</h2>
+        <nav id="nav-links">
+            <ul>
+                <li><a href="Index.html">Is Triangle?</a></li>
+                <li><a class="active" href="quiz.html">Triangle Quiz</a></li>
+                <li><a href="hypo.html">Hypotenuse</a></li>
+                <li><a href="area.html">Area of Triangle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Quiz on Triangles 📐</h1>
+        <form id="quiz-form">
+            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <label><input type="radio" name="question1" value="45°">45°</label>
+            <label><input type="radio" name="question1" value="60°">60°</label>
+            <label><input type="radio" name="question1" value="90°">90°</label>
+            <hr>
+            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <label><input type="radio" name="question2" value="obtuse">obtuse</label>
+            <label><input type="radio" name="question2" value="acute">acute</label>
+            <label><input type="radio" name="question2" value="right angled">right angled</label>
+            <hr>
+            <p>What is the area of a triangle with base 20 cm and height 25 cm?</p>
+            <label><input type="radio" name="question3" value="125 sq cm">125 sq cm</label>
+            <label><input type="radio" name="question3" value="250 sq cm">250 sq cm</label>
+            <label><input type="radio" name="question3" value="500 sq cm">500 sq cm</label>
+            <hr>
+            <p>All 3 interior angles of a triangle add up to</p>
+            <label><input type="radio" name="question4" value="90 degrees">90 degrees</label>
+            <label><input type="radio" name="question4" value="180 degrees">180 degrees</label>
+            <label><input type="radio" name="question4" value="360 degrees">360 degrees</label>
+            <hr>
+            <p>Isoscele triangle is defined as</p>
+            <label><input type="radio" name="question5" value="Two sides are equal">Two sides are equal</label>
+            <label><input type="radio" name="question5" value="All sides are equal">All sides are equal</label>
+            <label><input type="radio" name="question5" value="No sides are equal">No sides are equal</label>
+            <hr>
+            <p>What's the name of the type of maths that studies the sides and angles of triangles?</p>
+            <label><input type="radio" name="question6" value="Geometry">Geometry</label>
+            <label><input type="radio" name="question6" value="Triology">Triology</label>
+            <label><input type="radio" name="question6" value="Trigonometry">Trigonometry</label>
+            <hr>
+            <p>The longest side of a right angled triangle is called?</p>
+            <label><input type="radio" name="question7" value="Base">Base</label>
+            <label><input type="radio" name="question7" value="Hypotenuse">Hypotenuse</label>
+            <label><input type="radio" name="question7" value="Perpendicular">Perpendicular</label>
+            <hr>
+            <p>If one angle of a triangle is obtuse, then which one of the following is the possible measure of
+                remaining
+                angles?</p>
+            <label><input type="radio" name="question8" value="100">100 degrees</label>
+            <label><input type="radio" name="question8" value="90">90 degrees</label>
+            <label><input type="radio" name="question8" value="85">85 degrees</label>
+                <hr>
+            <p>A triangle has how many dimentions?</p>
+            <label><input type="radio" name="question9" value="1">one</label>
+            <label><input type="radio" name="question9" value="2">Two</label>
+            <label><input type="radio" name="question9" value="3">three</label>
+                <hr>
+            <p>The measures of all the internal angles of a right isosceles triangle will be?</p>
+            <label><input type="radio" name="question10" value="45°, 45°, 90°">45°, 45°, 90°</label>
+            <label><input type="radio" name="question10" value="30°, 60°, 90°">30°, 60°, 90°</label>
+            <label><input type="radio" name="question10" value="
+            50°, 40°, 90°">
+                50°, 40°, 90°</label>
+                <hr>
+        </form>
+        <button id="submit-btn">Submit</button>
+        <div id="output"></div>
+    </main>
+
+    <footer id="footer">
+        <ul id="list">
+            <li class="social">
+                <a class="links" href="https://github.com/Shraddha-V22" target="_blank">
+                    <ion-icon name="logo-github" class="ionicons"></ion-icon>
+                </a>
+            </li>
+            <li class="social">
+                <a class="links" href="https://www.linkedin.com/in/vkarma-shraddha/" target="_blank">
+                    <ion-icon name="logo-linkedin" class="ionicons"></ion-icon>
+                </a>
+            </li>
+            <li class="social">
+                <a class="links" href="https://twitter.com/Shraddha_228" target="_blank">
+                    <ion-icon name="logo-twitter" class="ionicons"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="istriangle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
